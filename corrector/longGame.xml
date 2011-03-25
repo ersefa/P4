@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE game SYSTEM "game.dtd"> 
+<!-- Game: An Example Game. The Two Towels --> 
+
+<game title="THE TWO TOWELS" author="Cristina and Jose Luis">
+	Three Rings for the Elven-kings...
+	<help>
+		There is no help that can save you here! Prepare to die!
+	</help>
+	<location id="forest" name="FOREST OF THONTUNIA">
+		You are a 'profesional dungeoneer' of the Kingdom of Thontunia, a brave guy who explores dangerous places looking for lost treasures. Now you are wandering in the forest, ready for another exciting day full of adventures. It seems there is a cave at the north...
+		<connection dir="n" target="cave" />
+		<connection dir="s" target="meditation" />
+	</location>
+	
+	<location id="cave" name="ENTRANCE OF THE CAVE">
+		Aha! The inside of the cave is really big. You can smell the aroma of adventure... no, no, wait... what you are smelling is the stench of trolls! You should be careful exploring the cave, trying not to find a troll in your way... or you'll be part of his diet :-( There are two passages in the cave, an small one at the west and a big one at the northeast. Close to the northeast passage there is a skull on the floor (ughs!).
+		<item id="skull" name="A skull" value="25" weight="0">
+			This skull is really scary.
+		</item>
+		<connection dir="w" target="smallPassage" />
+		<connection dir="ne" target="bigPassage" />
+		<connection dir="s" target="forest" />
+	</location>
+	
+	<location id="meditation" name="MEDITATION CAVE">
+		Looks like you are wondering if you dive into the adventures that await you in the forest. That makes me think that maybe you do not have the facts straight. If not you wander, you can not talk about the adventures with other browsers. Can you repent! Take a coin. Back to the north and behave like a real adventurer. If you really afraid, go northeast ...
+		<item id="coin" name="A coin" value="15" weight="0">
+			This coin is the fate.
+		</item>
+		<connection dir="n" target="forest" />
+		<connection dir="ne" target="backDoor" />
+	</location>
+	
+	<location id="smallPassage" name="SMALL PASSAGE OF THE CAVE">
+		You have decided to enter into the small passage. May not have been the right choice. You seem like small sites. Do you like to look closely at things? Would you like to feel the excitement about? Undoubtedly, you have chosen the best option. You can go to the northwest and begin to feel the heat like you are in the Caribbean. On the right you have a swimsuit that might come in handy if you do not carry one in the bag ...
+		<item id="swimsuit" name="A swimsuit" value="5" weight="0">
+			This swimsuit is very good.
+		</item>
+		<connection dir="nw" target="fireRoom" />
+		<connection dir="e" target="cave" />
+	</location>
+
+	<location id="bigPassage" name="BIG PASSAGE OF THE CAVE">
+		Welcome to this part of the cave. Before you can see several galleries. You must make a choice and be consistent with it. Nothing is going to terrorize, or yes, that is up to you. Be careful when you enter because you could find the remains of bones of previous adventurers. Feel the fear eh? Take a lime before choosing, no rush but do not have all day. You should go south to choose the tools you think you might need to hazards that may arise in your way or if instead you want to relax go north and if you want to inquire about the type of people you can find ... go east ... CHOOSE NOW!!!
+		<item id="bone" name="A bone" value="-10" weight="0">
+			This bone is hard.
+		</item>
+		<item id="lime" name="A lime" value="1" weight="0">
+			This lime is rich.
+		</item>
+		<connection dir="n" target="darkRoom1" />
+		<connection dir="e" target="paintRoom" />
+		<connection dir="s" target="toolRoom" />
+		<connection dir="sw" target="cave" />
+	</location>
+	
+	<location id="toolRoom" name="TOOL ROOM">
+		Care! Hide you! You have just entered the room damn. What you see on the ground is not ketchup, it is blood. To get the tools you see on the wall should be careful where you step ... or your brains will be part of the furniture. LUCK!!! If you go south you have the southeast you have the possibility to leave by the back door ....
+		<connection dir="n" target="bigPassage" />
+		<connection dir="se" target="backDoor" />
+	</location>
+
+	<location id="backDoor" name="BACK DOOR" threshold="20" exitMsg="Bye!">
+		Oh, no, I can not believe it! What are you doing here? An intrepid adventurer can not be afraid of anything. I have disappointed, I thought you were more brave. Come back when you lost fears ...
+		<connection dir="ne" target="toolRoom" />
+	</location>
+	
+	<location id="paintRoom" name="PAINT ROOM">
+		You have just entered the room more valuable of the cave. Beware of the troll, he is asleep. As you realize your presence you will be your food. Agh! Glub! What paintings are these? I want to go from here! ZAS! The troll is stirring ... Appear on the floor is a brush and boats paint, so paint will be playing to go unnoticed and that the troll again sleep. To make matters worse in this room there was nothing interesting! I think it should leave by the back door, but would have to sort out the troll and exit at the south ...
+		<item id="brush" name="A brush" value="3" weight="0">
+			This brush paints good.
+		</item>
+		<connection dir="w" target="bigPassage" />
+		<connection dir="s" target="backDoor" />
+	</location>
+	
+	<location id="fireRoom" name="FIRE ROOM">
+		Wajaja! We have fooled you! Are you starting to feel the heat? Well hurry up because every second that pass the temperature increases. The only outlet you have is to go north and pray that no other room worse. We will not be so bad and give you the opportunity to use it as a sauna, you could really lose some weight ... On the roof you have two thermostats, you must choose the correct to regulate temperature or else ...
+		<item id="thermostat1" name="Thermostat1" value="4" weight="0">
+			The thermostat 1 temperature increases.
+		</item>
+		<item id="thermostat2" name="Thermostat2" value="-4" weight="0">
+			The thermostat 2 is bad.
+		</item>
+		<connection dir="n" target="refuge" />
+		<connection dir="se" target="smallPassage" />
+	</location>
+	
+	<location id="refuge" name="REFUGE OF THE CAVE">
+		You are a brave adventurer. Nothing stands in your way towards the goal. We are shoked, but this has only just begun. You still have many adventures ahead. On the table you have a flashlight in case you want to accompany you on your way. For now, you rest, you expected a hard day at daybreak. To the northeast yo can see another room ...
+		<item id="lamp" name="lamp" value="30" weight="0">
+			The thermostat 2 is bad.
+		</item>
+		<connection dir="s" target="fireRoom" />
+		<connection dir="ne" target="polychromeRoom" />
+	</location>
+	
+	<location id="darkRoom1" name="DARK ROOM OF THE BIG PASSAGE">
+		Again fell in a trap. It seems you are not as smart as you thought. This room is cold and dark and the window is open ... Oh no, seems to be casting trolls out the window! Quick! Try closing the window, but beware, there seems to pushpins on the floor. Collect some to be the keys to the keys to the trolls in the foot and then you can win time to scape them. You have no choice but to go to northwest ...		
+		<item id="pushpin" name="The pushpin" value="5" weight="0">
+			The thermostat 2 is bad.
+		</item>
+		<connection dir="nw" target="polychromeRoom" />
+		<connection dir="s" target="bigPassage" />
+	</location>
+	
+	<location id="polychromeRoom" name="POLYCHROME ROOM">
+		See? Now understand the type of people who live in this cave? I hope you have passed the shock of seeing trolls and you have rested. In short you must agree with a group of tourists, as the room you just entered is very famous. You can see the type of materials used in antiquity and which devoted part of his time. Do not be too thief, do not take anything! Well you can take thumbnails, but not may because when you go to the north you will be frisked and as you take over ... In the middle of the room you can see there is a cabinet with pots, ashtrys ...
+		<item id="ashtry" name="The ashtry" value="2" weight="0">
+			This ashtry is blue
+		</item>
+		<item id="pot" name="The pot" value="1" weight="0">
+			This pot is strange
+		</item>
+		<connection dir="sw" target="refuge" />
+		<connection dir="se" target="darkRoom1" />
+		<connection dir="n" target="basin" />
+	</location>
+	
+	<location id="basin" name="THE BASIN ROOM">
+		But ... if it is empty! There's nothing nowhere! It seems that this room only serves to choose the path I want to do. Difficult choice. West, North, East. Pinto Pinto trill ...
+		<connection dir="n" target="monsters" />
+		<connection dir="s" target="polychromeRoom" />
+		<connection dir="e" target="relax" />
+		<connection dir="w" target="horseTail" />
+	</location>
+	
+	<location id="relax" name="RELAX ROOM">
+		Just get to the prayer hall. You have to integrate into their culture or else you will do the harakiri jaja just kidding. Try to relax, you wear many scares in the body. Perhaps vampires bother you ... There you have some garlic if you want them to. When you feel ready again to the road ...
+		<item id="garlic" name="The garlic" value="25" weight="0">
+			This ashtry is blue
+		</item>
+		<connection dir="w" target="basin" />
+	</location>
+	
+	<location id="horseTail" name="HORSE TAIL ROOM">
+		This room is like an animal. Look carefully, because until I guess you will not get out of here hahaha. You can take paper to jot down possible solutions. After sticking the paper in the door you want to go (north, east, northwest) ...
+		<item id="paper" name="The paper" value="1" weight="0">
+			The paper is white
+		</item>
+		<connection dir="n" target="darkRoom2" />
+		<connection dir="e" target="basin" />
+		<connection dir="nw" target="trollFriends" />
+	</location>
+	
+	<location id="darkRoom2" name="DARK ROOM">
+		Wow, you are doing the crazy! Well, this time the darkness is not to rest. You are in a room full of fireflies illuminating ... Aah, I just step one. I think I should get me one in the bag ... I may light the way ... because I think I am lost. I can go to south or east ...
+		<item id="fireflie" name="The fireflie" value="-25" weight="0">
+			The fireflie is horrible
+		</item>
+		<connection dir="s" target="horseTail" />
+		<connection dir="e" target="monsters" />
+	</location>
+	
+	<location id="monsters" name="MONSTERS OF THE CAVE">
+		Agh! But what is this? They are stuffed animals. These people are ... uooh! They come for me! Yes! The network that is on the wall can be used to tie I am going crazy! This is all a figment of my imagination, count up to 3 and all have happened ... 1, 2 ... Aah I have touched! Why door should I go? North, south, west, northwest ...
+		<item id="network" name="The network" value="-27" weight="0">
+			This network is very big
+		</item>
+		<connection dir="s" target="basin" />
+		<connection dir="w" target="darkRoom2" />
+		<connection dir="n" target="foodRoom" />
+		<connection dir="nw" target="dresses" />
+	</location>
+	
+	<location id="trollFriends" name="TROLL FRIENDS">
+		you did not want action? Dare to look behind you ... But do not yell or be worse! You have gone to the room of the trolls. Luckily today is a holiday and you are one more of them, but did not take long leave or you will end up being your meal. Get  a coffee cup. There is one door to the northeast ... Could be another party? Discover it ...
+		<item id="cup" name="The cup" value="16" weight="0">
+			This cup was stolen
+		</item>
+		<connection dir="se" target="horseTail" />
+		<connection dir="ne" target="waterPassage" />
+	</location>
+	
+	<location id="dresses" name="DRESSES OF THE TIME">
+		You just go back in time. The clothes you wear is broken and is outdated for the time. It is necessary that you change your clothes. Variety where you elected. Take the mirror and try on dresses, pants ... When you're ready, go north or south. You'll feel like Meteor Shower and through the door ...
+		<item id="dress" name="The dress" value="2" weight="0">
+			This dress is new
+		</item>
+		<item id="pant" name="The pant" value="1" weight="0">
+			This pant is old
+		</item>
+		<item id="mirror" name="The mirror" value="2" weight="0">
+			This mirror is big
+		</item>
+		<connection dir="se" target="monsters" />
+		<connection dir="n" target="waterPassage" />
+	</location>
+	
+	<location id="foodRoom" name="FOOD ROOM">
+		Mmm! Smells good! Do you miss home cooking? Are you hungry? Sit on the table, then ... Oh no! The food is you! Try to get rid of the trolls Use the silverware on the table if you had to fight them. Are you peaceful ... Run away to the north! Since then ... going to be a great athlete!!
+		<item id="silverware" name="The silverware" value="-30" weight="0">
+			These silverware can save your life
+		</item>
+		<connection dir="s" target="monsters" />
+		<connection dir="n" target="fightRoom" />
+	</location>
+	
+	<location id="waterPassage" name="WATER PASSAGE OF THE CAVE">
+		Here musty, seems to have been a storm. Be careful, the floor ... aaah! Slip eh? I would take the raincoat that have been forgotten because you could take you a cold. You should not spend much time here because the water can cover the entire passage as the Titanic. Flees to the south, southwest or northeast ...
+		<item id="raincoat" name="The raincoat" value="0" weight="0">
+			This raincoat is impermeable
+		</item>
+		<connection dir="ne" target="fightRoom" />
+		<connection dir="s" target="dresses" />
+		<connection dir="sw" target="trollFriends" />
+	</location>
+	
+	<location id="fightRoom" name="FIGHT ROOM OF THE CAVE">
+		We were waiting ... You think you are ready to have gotten rid of our trolls and traps that you have put on the road ... but I still have ahead the hardest battle, the fight against our greatest and terrifying troll!! You gave me I turned around and went home, but since you got here ... you should go north ...
+		<item id="clock" name="The clock" value="-26" weight="0">
+			This clock is stopped
+		</item>
+		<connection dir="n" target="kingTroll" />
+		<connection dir="s" target="foodRoom" />
+		<connection dir="sw" target="waterPassage" />
+	</location>
+	
+	<location id="kingTroll" name="KING TROLL OF THONTUNIA">
+		Congratulations! You are the first that has managed to get here. I know you have had to fight hard and spend hardship in this cave so quiet apparently. That smell ... Agh! You are!! The King will grant you the pleasure to use their facilities in the kingdom, so it looks like a cave is the most beautiful of all the woods and come more intrepid adventurers. Altough hopefully not all have the same fate as you, because muy trolls are hungry and you are very tasty jeje. Continue north and you will see your second reward ...
+		<item id="gifts" name="The gifts" value="30" weight="0">
+			These gifts are deserved
+		</item>
+		<connection dir="n" target="heaven" />
+		<connection dir="s" target="fightRoom" />
+	</location>
+</game>

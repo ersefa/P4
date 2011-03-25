@@ -1,0 +1,34 @@
+# Example Game: The Two Towels
+game "THE TWO TOWELS" "Jose Luis García Martínez" "Three Rings for the Elven-kings..."
+
+help "Special Help: Advices and clues. "
+
+location h1 "Room 1" "First Room"
+item it1 "Item1" "Item 1" 25 4
+item it2 "Item2" "Item 2" -25 4
+item it3 "Item3" "Item 3" 25 4
+item itN "ItemNegativo" "Item Negativo" 25 -4
+e h2
+se h4
+
+location h2 "Room 2" "Second Room"
+s h4
+obstacle obs1 "Obstacle 1" "Obstacle 1 description" "true" "You cannot pass, obstacle 1 is in this way"
+e h3
+w h1
+
+location h3 "Room 3" "Third Room"
+w h2
+
+location h4 "Room 4" "Fourth Room"
+nw h1
+obstacle obs2 "Obstacle 2" "Obstacle 2 description" "true" "You cannot pass, obstacle 2 is in this way"
+itemRef it2
+itemRef it3
+obsRef obs1
+n h2
+s exit
+w h5
+
+location exit "Exit" "Exit Room" 10 "You are leaving the game..."
+n h4

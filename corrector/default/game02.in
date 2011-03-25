@@ -1,0 +1,35 @@
+go e
+go s
+g s
+undo
+undo
+go n
+take Item1
+open w
+go e
+unlock e
+u e
+open e
+close e
+undo
+undo
+go e
+look
+x
+go w
+go w
+take Item1
+take Item2
+take Item3
+take Item4
+take ItemNegativo
+take Item3
+go w
+go e
+go s
+go nw
+open nw
+open nw with Item2
+go nw
+undo
+go south

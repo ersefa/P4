@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!-- Ant Build File for LPS projects. 
+     (Note that you should not use special characters in the comments of these type of files) -->
+<project name="LPS-P4" default="all" basedir=".">
+	<!-- PROPERTIES (Definition of variables that can be used in this file) -->
+	<property name="srcDir" value="src"/>
+	<property name="testDir" value="test"/>
+	<property name="buildDir" value="bin"/>
+	<property name="docDir" value="doc"/>
+	<!-- ENGINE COMPILATION -->
+	<target name="compileEngine" description="Engine Compilation">
+		<mkdir dir="${buildDir}"/>
+		<javac srcdir="${srcDir}" destdir="${buildDir}" classpath="jargs.jar" includeantruntime="false"/>
+		<echo>Engine source compilation complete.</echo>
+	</target>
+	<!-- STUDENT TESTS COMPILATION -->
+	<target name="compileStudentTests" description="Student Tests Compilation" depends="compileEngine">
+		<javac srcdir="${testDir}" destdir="${buildDir}" classpath="${buildDir};junit.jar" includeantruntime="false"/>
+		<echo>Student tests source compilation complete.</echo>
+	</target>
+	<!-- STUDENT TESTS EXECUTION -->
+	<target name="test" description="Execution of the student tests" depends="compileStudentTests">
+		<junit printsummary="on">
+			<classpath>
+				<pathelement path="${buildDir}"/>
+				<pathelement location="junit.jar"/>
+			</classpath>
+			<formatter type="plain"/>
+			<test name="es.ucm.fdi.lps.p4.test.AllTests"/>
+		</junit>
+		<echo>Student tests executed.</echo>
+	</target>
+	<!-- CREATION OF THE ENGINE JAR FILE -->
+	<target name="jar" description="Creation of the Engine JAR file" depends="compileEngine">
+		<jar destfile="engine.jar" basedir="${buildDir}">
+			<zipfileset includes="**/*.class" src="jargs.jar"/>
+			<manifest>
+				<attribute name="Main-Class" value="es.ucm.fdi.lps.p4.Main"/>
+				<attribute name="Built-by" value="${user.name}"/>
+			</manifest>
+		</jar>
+		<echo>Engine JAR file created.</echo>
+	</target>
+	<!-- GENERATION OF ALL THE DOCUMENTATION (OF THE ENGINE AND ITS TESTS)  -->
+	<target name="doc" description="Generation of all the documentation">
+		<javadoc destdir="${docDir}" sourcepath="${srcDir};${testDir};" author="true" protected="true" windowtitle="LPS-P4 Documentation" classpath="${buildDir};jargs.jar;junit.jar"/>
+		<echo>All the documentation generated.</echo>
+	</target>
+	<!-- CORRECTION COMPLETE -->
+	<target name="all" depends="test, jar" description="Correction complete">
+		<echo>Correction complete.</echo>
+	</target>
+	<!-- CLEAN (Delete every file. Note that this includes the original src and test directories!) -->
+	<target name="clean">
+		<delete dir="${docDir}" failonerror="false"/>
+		<delete file="engine.jar" failonerror="false"/>
+		<delete dir="${testDir}" failonerror="false"/>
+		<delete dir="${buildDir}" failonerror="false"/>
+		<delete dir="${srcDir}" failonerror="false"/>
+		<delete file="TEST-es.ucm.fdi.lps.p4.test.AllTests.txt" failonerror="false"/>
+		<delete file="game01.out" failonerror="false"/>
+		<delete file="game02.out" failonerror="false"/>
+		<delete file="game03.out" failonerror="false"/>
+		<delete file="game01spanish.out" failonerror="false"/>
+		<delete file="game01config.out" failonerror="false"/>
+	</target>
+</project>

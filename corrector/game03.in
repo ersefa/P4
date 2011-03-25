@@ -1,0 +1,32 @@
+help
+look
+undo
+u
+close n
+open e
+go e
+go e
+close e
+o e
+undo
+go e
+go w
+undo
+go w
+take Item2
+take Item3
+take Item1
+drop Item2
+take Item1
+take Item2
+take ItemNegativo
+take Item2
+look
+x
+go se
+drop Item3
+drop Item1
+go s
+undo
+take Item1
+go s

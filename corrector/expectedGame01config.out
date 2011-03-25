@@ -1,0 +1,228 @@
+GAME ENGINE FOR TEXT ADVENTURES
+Version 1.0 (January 2011)
+Designed by Guillermo Jiménez and Federico Peinado
+
+THE TWO TOWELS
+Jose Luis García Martínez
+
+
+Room 1
+First Room
+
+This location contains the following items:
+Item1 [Value(25)
+Item2 [Value(-25)
+Item3 [Value(25)
+ItemNegativo [Value(25)
+
+>
+Room 2
+Second Room
+
+This location has no items.
+
+>
+I do not understand the command you entered.
+
+>
+Obstacle Unlocked.
+
+>
+Room 3
+Third Room
+
+This location has no items.
+
+>
+Room 2
+Second Room
+
+This location has no items.
+
+>
+Room 4
+Fourth Room
+
+This location has no items.
+
+>
+You cannot pass, obstacle 2 is in this way
+
+>
+Room 2
+Second Room
+
+This location has no items.
+
+>
+Room 1
+First Room
+
+This location contains the following items:
+Item1 [Value(25)
+Item2 [Value(-25)
+Item3 [Value(25)
+ItemNegativo [Value(25)
+
+
+>
+It has been taken.
+
+>
+The inventory contains the following items:
+Item3 [Value(25)
+
+
+>
+Room 2
+Second Room
+
+This location has no items.
+
+>
+Room 4
+Fourth Room
+
+This location has no items.
+
+>
+Unlock Fail.
+
+>
+Obstacle Unlocked.
+
+>
+Room 1
+First Room
+
+This location contains the following items:
+Item1 [Value(25)
+Item2 [Value(-25)
+ItemNegativo [Value(25)
+
+
+>
+Room 4
+Fourth Room
+
+This location has no items.
+
+>
+It has been dropped.
+
+>
+Lock Fail.
+
+>
+It has been taken.
+
+>
+Obstacle Locked.
+
+>
+These are the available player commands:
+help|info|about
+(go|g|move) <direction>
+look|l|search
+(examine|x|inventory) [<item name>]
+(take|t|pick) <item name>
+(drop|d|unpick) <item name>
+undo|u|reverse
+quit|q|exit
+(open|o|unlock) <dir> [WITH <objectName>]
+(close|c|lock) <dir> [WITH <objectName>]
+
+Special Help: 
+Special Help: Advices and clues. 
+
+Command Statistics: 
+CloseCommand: 
+	Executions: 1
+	Percentage: 6
+DropCommand: 
+	Executions: 1
+	Percentage: 6
+ExamineCommand: 
+	Executions: 1
+	Percentage: 6
+GoCommand: 
+	Executions: 8
+	Percentage: 53
+HelpCommand: 
+	Executions: 0
+	Percentage: 0
+LookCommand: 
+	Executions: 0
+	Percentage: 0
+OpenCommand: 
+	Executions: 2
+	Percentage: 13
+QuitCommand: 
+	Executions: 0
+	Percentage: 0
+TakeCommand: 
+	Executions: 2
+	Percentage: 13
+UndoCommand: 
+	Executions: 0
+	Percentage: 0
+TOTAL COMMAND NUMBER: 15
+
+>
+You cannot pass, obstacle 2 is in this way
+
+>
+Obstacle Unlocked.
+
+>
+Room 2
+Second Room
+
+This location has no items.
+
+>
+Room 1
+First Room
+
+This location contains the following items:
+Item1 [Value(25)
+Item2 [Value(-25)
+ItemNegativo [Value(25)
+
+
+>
+Room 2
+Second Room
+
+This location has no items.
+
+>
+You cannot pass, obstacle 1 is in this way
+
+>
+The inventory contains the following items:
+Item3 [Value(25)
+
+
+>
+Room 2
+Second Room
+
+This location has no items.
+
+>
+Room 4
+Fourth Room
+
+This location has no items.
+
+>
+Exit
+Exit Room
+
+This location has no items.
+
+You are leaving the game...
+
+Player score:25
+GAME OVER

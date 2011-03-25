@@ -1,0 +1,32 @@
+go E
+go EasT
+open e
+go e
+undo
+go s
+go nw
+go n
+go w
+t Item3
+x
+go e
+g s
+open nw
+open nw with Item3
+go nw
+undo
+drop Item3
+close nw with Item3
+take Item3
+close nw with Item3
+help
+go nw
+open nw with Item3
+go n
+go w
+go e
+go e
+x
+look
+go s
+go s

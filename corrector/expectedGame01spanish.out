@@ -1,0 +1,171 @@
+GAME ENGINE FOR TEXT ADVENTURES
+Version 1.0 (January 2011)
+Designed by Guillermo Jiménez and Federico Peinado
+
+THE TWO TOWELS
+Jose Luis García Martínez
+
+
+Room 1
+First Room
+
+Te llaman la atención los siguientes objetos: 
+Item1 [Value(25) Weight(4)]
+Item2 [Value(-25) Weight(4)]
+Item3 [Value(25) Weight(4)]
+ItemNegativo [Value(25) Weight(-4)]
+
+The available directions from this location are: 
+EAST
+SOUTHEAST
+
+> 
+Room 2
+Second Room
+
+No hay nada que puedas coger aquí.
+The available directions from this location are: 
+EAST
+SOUTH
+WEST
+
+> 
+You cannot pass, obstacle 1 is in this way
+
+> 
+Obstaculo desactivado.
+
+> 
+Room 3
+Third Room
+
+No hay nada que puedas coger aquí.
+The available directions from this location are: 
+WEST
+
+> 
+Room 2
+Second Room
+
+No hay nada que puedas coger aquí.
+The available directions from this location are: 
+EAST
+SOUTH
+WEST
+
+> 
+Room 4
+Fourth Room
+
+No hay nada que puedas coger aquí.
+The available directions from this location are: 
+NORTH
+SOUTH
+NORTHWEST
+
+> 
+You cannot pass, obstacle 2 is in this way
+
+> 
+Room 2
+Second Room
+
+No hay nada que puedas coger aquí.
+The available directions from this location are: 
+EAST
+SOUTH
+WEST
+
+> 
+Room 1
+First Room
+
+Te llaman la atención los siguientes objetos: 
+Item1 Weight(4)]
+Item2 Weight(4)]
+Item3 Weight(4)]
+ItemNegativo Weight(-4)]
+
+The available directions from this location are: 
+EAST
+SOUTHEAST
+
+> 
+Objeto cogido.
+
+> 
+Este es tu inventario de objetos: 
+Item3 Weight(4)]
+
+
+> 
+Room 2
+Second Room
+
+No hay nada que puedas coger aquí.
+The available directions from this location are: 
+EAST
+SOUTH
+WEST
+
+> 
+Room 4
+Fourth Room
+
+No hay nada que puedas coger aquí.
+The available directions from this location are: 
+NORTH
+SOUTH
+NORTHWEST
+
+> 
+Error al desactivar el obstaculo.
+
+> 
+Error al desactivar el obstaculo.
+
+> 
+You cannot pass, obstacle 2 is in this way
+
+> 
+Room 2
+Second Room
+
+No hay nada que puedas coger aquí.
+The available directions from this location are: 
+EAST
+SOUTH
+WEST
+
+> 
+Room 2
+Second Room
+
+No hay nada que puedas coger aquí.
+The available directions from this location are: 
+EAST
+SOUTH
+WEST
+
+> 
+Room 4
+Fourth Room
+
+No hay nada que puedas coger aquí.
+The available directions from this location are: 
+NORTH
+SOUTH
+NORTHWEST
+
+> 
+Exit
+Exit Room
+
+No hay nada que puedas coger aquí.
+The available directions from this location are: 
+NORTH
+
+You are leaving the game...
+
+Puntuación obtenida: 25
+FIN.

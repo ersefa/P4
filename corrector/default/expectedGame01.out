@@ -1,0 +1,292 @@
+GAME ENGINE FOR TEXT ADVENTURES
+Version 1.0 (January 2011)
+Designed by Guillermo Jiménez and Federico Peinado
+
+THE TWO TOWELS
+Jose Luis García Martínez
+
+
+Habitacion N 1
+Primera habitacion del mapa de ejemplo para desarrollo
+
+This location contains the following items: 
+Item1 [Value(25) Weight(4)]
+Item2 [Value(-25) Weight(4)]
+Item3 [Value(25) Weight(4)]
+ItemNegativo [Value(25) Weight(-4)]
+
+The available directions from this location are: 
+EAST [CLEAR]
+SOUTHEAST [CLEAR]
+
+> 
+Habitacion N 2
+Segunda habitacion del mapa de ejemplo para desarrollo
+
+This location has no items.
+The available directions from this location are: 
+EAST [CLOSED]
+SOUTH [CLEAR]
+WEST [CLEAR]
+
+> 
+No puedes pasar, el obstaculo 1 te lo impide
+
+> 
+Obstacle Unlocked
+
+> 
+Habitacion N 3
+Tercera habitacion del mapa de ejemplo para desarrollo
+
+This location has no items.
+The available directions from this location are: 
+WEST [CLEAR]
+
+> 
+Habitacion N 2
+Segunda habitacion del mapa de ejemplo para desarrollo
+
+This location has no items.
+The available directions from this location are: 
+EAST [OPEN]
+SOUTH [CLEAR]
+WEST [CLEAR]
+
+> 
+Habitacion N 4
+Cuarta habitacion del mapa de ejemplo para desarrollo
+
+This location has no items.
+The available directions from this location are: 
+NORTH [CLEAR]
+SOUTH [CLEAR]
+NORTHWEST [CLOSED]
+
+> 
+No puedes pasar, el obstaculo 2 te lo impide
+
+> 
+Habitacion N 2
+Segunda habitacion del mapa de ejemplo para desarrollo
+
+This location has no items.
+The available directions from this location are: 
+EAST [OPEN]
+SOUTH [CLEAR]
+WEST [CLEAR]
+
+> 
+Habitacion N 1
+Primera habitacion del mapa de ejemplo para desarrollo
+
+This location contains the following items: 
+Item1 [Value(25) Weight(4)]
+Item2 [Value(-25) Weight(4)]
+Item3 [Value(25) Weight(4)]
+ItemNegativo [Value(25) Weight(-4)]
+
+The available directions from this location are: 
+EAST [CLEAR]
+SOUTHEAST [CLEAR]
+
+> 
+It has been taken.
+
+> 
+The inventory contains the following items: 
+Item3 [Value(25) Weight(4)]
+
+
+> 
+Habitacion N 2
+Segunda habitacion del mapa de ejemplo para desarrollo
+
+This location has no items.
+The available directions from this location are: 
+EAST [OPEN]
+SOUTH [CLEAR]
+WEST [CLEAR]
+
+> 
+Habitacion N 4
+Cuarta habitacion del mapa de ejemplo para desarrollo
+
+This location has no items.
+The available directions from this location are: 
+NORTH [CLEAR]
+SOUTH [CLEAR]
+NORTHWEST [CLOSED]
+
+> 
+Unlock Fail
+
+> 
+Obstacle Unlocked
+
+> 
+Habitacion N 1
+Primera habitacion del mapa de ejemplo para desarrollo
+
+This location contains the following items: 
+Item1 [Value(25) Weight(4)]
+Item2 [Value(-25) Weight(4)]
+ItemNegativo [Value(25) Weight(-4)]
+
+The available directions from this location are: 
+EAST [CLEAR]
+SOUTHEAST [CLEAR]
+
+> 
+Habitacion N 4
+Cuarta habitacion del mapa de ejemplo para desarrollo
+
+This location has no items.
+The available directions from this location are: 
+NORTH [CLEAR]
+SOUTH [CLEAR]
+NORTHWEST [OPEN]
+
+> 
+It has been dropped.
+
+> 
+Lock Fail
+
+> 
+It has been taken.
+
+> 
+Obstacle Locked
+
+> 
+These are the available player commands:
+help|info|about
+(go|g|move) <direction>
+look|l|search
+(examine|x|inventory) [<item name>]
+(take|t|pick) <item name>
+(drop|d|unpick) <item name>
+undo|u|reverse
+quit|q|exit
+(open|o|unlock) <dir> [WITH <objectName>]
+(close|c|lock) <dir> [WITH <objectName>]
+
+Special Help: 
+Consejos y pistas, creadas por el propio autor del juego sobre como disfrutar del mismo y superar los retos que se presentan al jugador.
+
+Command Statistics: 
+CloseCommand: 
+	Executions: 1
+	Percentage: 6
+DropCommand: 
+	Executions: 1
+	Percentage: 6
+ExamineCommand: 
+	Executions: 1
+	Percentage: 6
+GoCommand: 
+	Executions: 8
+	Percentage: 53
+HelpCommand: 
+	Executions: 0
+	Percentage: 0
+LookCommand: 
+	Executions: 0
+	Percentage: 0
+OpenCommand: 
+	Executions: 2
+	Percentage: 13
+QuitCommand: 
+	Executions: 0
+	Percentage: 0
+TakeCommand: 
+	Executions: 2
+	Percentage: 13
+UndoCommand: 
+	Executions: 0
+	Percentage: 0
+TOTAL COMMAND NUMBER: 15
+
+
+Active Game Configuration:
+No specific Properties file gave
+> 
+No puedes pasar, el obstaculo 2 te lo impide
+
+> 
+Obstacle Unlocked
+
+> 
+Habitacion N 2
+Segunda habitacion del mapa de ejemplo para desarrollo
+
+This location has no items.
+The available directions from this location are: 
+EAST [CLOSED]
+SOUTH [CLEAR]
+WEST [CLEAR]
+
+> 
+Habitacion N 1
+Primera habitacion del mapa de ejemplo para desarrollo
+
+This location contains the following items: 
+Item1 [Value(25) Weight(4)]
+Item2 [Value(-25) Weight(4)]
+ItemNegativo [Value(25) Weight(-4)]
+
+The available directions from this location are: 
+EAST [CLEAR]
+SOUTHEAST [CLEAR]
+
+> 
+Habitacion N 2
+Segunda habitacion del mapa de ejemplo para desarrollo
+
+This location has no items.
+The available directions from this location are: 
+EAST [CLOSED]
+SOUTH [CLEAR]
+WEST [CLEAR]
+
+> 
+No puedes pasar, el obstaculo 1 te lo impide
+
+> 
+The inventory contains the following items: 
+Item3 [Value(25) Weight(4)]
+
+
+> 
+Habitacion N 2
+Segunda habitacion del mapa de ejemplo para desarrollo
+
+This location has no items.
+The available directions from this location are: 
+EAST [CLOSED]
+SOUTH [CLEAR]
+WEST [CLEAR]
+
+> 
+Habitacion N 4
+Cuarta habitacion del mapa de ejemplo para desarrollo
+
+This location has no items.
+The available directions from this location are: 
+NORTH [CLEAR]
+SOUTH [CLEAR]
+NORTHWEST [OPEN]
+
+> 
+SALIDA
+Habitacion de salida
+
+This location has no items.
+The available directions from this location are: 
+NORTH [CLEAR]
+
+Estas saliendo del juego...
+
+Player score: 25
+GAME OVER

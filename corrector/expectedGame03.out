@@ -1,0 +1,224 @@
+GAME ENGINE FOR TEXT ADVENTURES
+Version 1.0 (January 2011)
+Designed by Guillermo Jiménez and Federico Peinado
+
+THE TWO TOWELS
+Jose Luis García Martínez
+
+
+Room 1
+First Room
+
+This location contains the following items: 
+Item1 [Value(25) Weight(4)]
+Item2 [Value(-25) Weight(4)]
+Item3 [Value(25) Weight(4)]
+ItemNegativo [Value(25) Weight(-4)]
+
+The available directions from this location are: 
+EAST [CLEAR]
+SOUTHEAST [CLEAR]
+
+> 
+These are the available player commands:
+help|info|about
+(go|g|move) <direction>
+look|l|search
+(examine|x|inventory) [<item name>]
+(take|t|pick) <item name>
+(drop|d|unpick) <item name>
+undo|u|reverse
+quit|q|exit
+(open|o|unlock) <dir> [WITH <objectName>]
+(close|c|lock) <dir> [WITH <objectName>]
+
+Special Help: 
+Special Help: Advices and clues. 
+
+Command Statistics: 
+There is no executed commands yet
+
+Active Game Configuration:
+No specific Properties file gave
+> 
+Room 1
+First Room
+
+This location contains the following items: 
+Item1 [Value(25) Weight(4)]
+Item2 [Value(-25) Weight(4)]
+Item3 [Value(25) Weight(4)]
+ItemNegativo [Value(25) Weight(-4)]
+
+The available directions from this location are: 
+EAST [CLEAR]
+SOUTHEAST [CLEAR]
+
+> 
+Undo success: LookCommand
+
+> 
+There is no command that can be undone.
+
+> 
+Lock Fail
+
+> 
+Unlock Fail
+
+> 
+Room 2
+Second Room
+
+This location has no items.
+The available directions from this location are: 
+EAST [CLOSED]
+SOUTH [CLEAR]
+WEST [CLEAR]
+
+> 
+You cannot pass, obstacle 1 is in this way
+
+> 
+Lock Fail
+
+> 
+Obstacle Unlocked
+
+> 
+Obstacle Locked
+
+> 
+You cannot pass, obstacle 1 is in this way
+
+> 
+Room 1
+First Room
+
+This location contains the following items: 
+Item1 [Value(25) Weight(4)]
+Item2 [Value(-25) Weight(4)]
+Item3 [Value(25) Weight(4)]
+ItemNegativo [Value(25) Weight(-4)]
+
+The available directions from this location are: 
+EAST [CLEAR]
+SOUTHEAST [CLEAR]
+
+> 
+Room 2
+Second Room
+
+This location has no items.
+The available directions from this location are: 
+EAST [CLOSED]
+SOUTH [CLEAR]
+WEST [CLEAR]
+
+> 
+Room 1
+First Room
+
+This location contains the following items: 
+Item1 [Value(25) Weight(4)]
+Item2 [Value(-25) Weight(4)]
+Item3 [Value(25) Weight(4)]
+ItemNegativo [Value(25) Weight(-4)]
+
+The available directions from this location are: 
+EAST [CLEAR]
+SOUTHEAST [CLEAR]
+
+> 
+It has been taken.
+
+> 
+It has been taken.
+
+> 
+The item cannot be taken, overweight detected.
+
+> 
+It has been dropped.
+
+> 
+It has been taken.
+
+> 
+The item cannot be taken, overweight detected.
+
+> 
+It has been taken.
+
+> 
+It has been taken.
+
+> 
+Room 1
+First Room
+
+This location has no items.
+The available directions from this location are: 
+EAST [CLEAR]
+SOUTHEAST [CLEAR]
+
+> 
+The inventory contains the following items: 
+Item3 [Value(25) Weight(4)]
+Item1 [Value(25) Weight(4)]
+ItemNegativo [Value(25) Weight(-4)]
+Item2 [Value(-25) Weight(4)]
+
+
+> 
+Room 4
+Fourth Room
+
+This location has no items.
+The available directions from this location are: 
+NORTH [CLEAR]
+SOUTH [CLEAR]
+NORTHWEST [CLOSED]
+
+> 
+It has been dropped.
+
+> 
+It has been dropped.
+
+> 
+Exit
+Exit Room
+
+This location has no items.
+The available directions from this location are: 
+NORTH [CLEAR]
+
+> 
+Room 4
+Fourth Room
+
+This location contains the following items: 
+Item3 [Value(25) Weight(4)]
+Item1 [Value(25) Weight(4)]
+
+The available directions from this location are: 
+NORTH [CLEAR]
+SOUTH [CLEAR]
+NORTHWEST [CLOSED]
+
+> 
+It has been taken.
+
+> 
+Exit
+Exit Room
+
+This location has no items.
+The available directions from this location are: 
+NORTH [CLEAR]
+
+You are leaving the game...
+
+Player score: 25
+GAME OVER
